@@ -143,6 +143,8 @@ Error message and password prompt
 
 <li>$:/config/AutoSave</li>
 
+<li>$:/config/Manager/System</li>
+
 <li>$:/config/Navigation/UpdateAddressBar</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
@@ -253,8 +255,6 @@ Error message and password prompt
 
 <li>BaffSpace</li>
 
-<li>Draft of 'GetANode' by baff5b</li>
-
 <li>ElectrumRhodium</li>
 
 <li>Fork me!</li>
@@ -262,12 +262,6 @@ Error message and password prompt
 <li>GetANode</li>
 
 <li>RpcDocs</li>
-
-<li>Untitled</li>
-
-<li>Untitled 1</li>
-
-<li>Untitled 2</li>
 
 <li>Welcome</li>
 
@@ -289,6 +283,9 @@ Error message and password prompt
 <div id="storeArea" style="display:none;">
 <div created="20210531173343871" creator="baff5b" modified="20210531173343871" modifier="baff5b" title="$:/config/AutoSave">
 <pre>no</pre>
+</div>
+<div created="20210531181131724" creator="baff5b" modified="20210531181138318" modifier="baff5b" title="$:/config/Manager/System">
+<pre>system</pre>
 </div>
 <div created="20210531180404862" creator="baff5b" modified="20210531180404862" modifier="baff5b" title="$:/config/Navigation/UpdateAddressBar">
 <pre>permaview</pre>
@@ -10410,7 +10407,7 @@ Error message and password prompt
 <div created="20210531165433941" creator="b" modified="20210531165434953" modifier="baff5" title="$:/status/UserName">
 <pre>baff5b</pre>
 </div>
-<div created="20210531180002093" creator="baff5b" list="$:/ControlPanel $:/config/Toolbar/Text Welcome" modified="20210531180950430" modifier="baff5b" title="$:/StoryList">
+<div created="20210531180002093" creator="baff5b" list="Welcome" modified="20210531181110235" modifier="baff5b" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210531172141311" creator="baff5b" modified="20210531172221950" modifier="baff5b" tags="" title="$:/tags/PageControls">
@@ -10548,9 +10545,6 @@ Error message and password prompt
 <div created="20210531174002538" creator="baff5b" encrypted="{&quot;iv&quot;:&quot;hQxR2UWf7tooPqDpU3/l/w==&quot;,&quot;v&quot;:1,&quot;iter&quot;:10000,&quot;ks&quot;:128,&quot;ts&quot;:64,&quot;mode&quot;:&quot;ccm&quot;,&quot;adata&quot;:&quot;&quot;,&quot;cipher&quot;:&quot;aes&quot;,&quot;salt&quot;:&quot;bKTq7kgyh7k=&quot;,&quot;ct&quot;:&quot;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&quot;}" modified="20210531175501630" modifier="baff5b" tags="" title="BaffSpace">
 <pre>!!This is an encrypted Tiddler</pre>
 </div>
-<div modified="20210531172800118" modifier="baff5b" title="Draft of 'GetANode' by baff5b">
-<pre></pre>
-</div>
 <div created="20210531171038296" creator="baff5b" modified="20210531171119987" modifier="baff5b" tags="wallet" title="ElectrumRhodium">
 <pre>You can find more information and download ElectrumRhodium from https://electrum.xrhodium.org.</pre>
 </div>
@@ -10572,15 +10566,6 @@ Error message and password prompt
 * How to use the RPC: https://wiki.xrhodium.org/html/31619f23-c52f-4fbb-95a7-2d51b104abba.htm 
 * RPC Wallet: https://wiki.xrhodium.org/html/a8247dcf-e6f6-4b13-83c5-8c25779636e0.htm
 </pre>
-</div>
-<div title="Untitled">
-<pre>&lt;p&gt;&lt;a class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot; href=&quot;https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/#%24%3A%2Fplugins%2Fdanielo515%2FencryptTiddler&quot;&gt;$:/plugins/danielo515/encryptTiddler&lt;/a&gt;&lt;/p&gt;</pre>
-</div>
-<div title="Untitled 1">
-<pre>&lt;p&gt;&lt;a class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot; href=&quot;https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/#%24%3A%2Fplugins%2Fdanielo515%2FencryptTiddler&quot;&gt;$:/plugins/danielo515/encryptTiddler&lt;/a&gt;&lt;/p&gt;</pre>
-</div>
-<div title="Untitled 2" type="text/plain">
-<pre>$:/plugins/danielo515/encryptTiddler</pre>
 </div>
 <div created="20210531163600829" creator="baff5b" modified="20210531171425382" modifier="baff5b" title="Welcome">
 <pre>Welcome to the xRhodium wiki. The focus here is on xRhodium and FreeMarketOne. You can find out more information at:
