@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/github-fork-ribbon</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -163,9 +165,19 @@ Error message and password prompt
 
 <li>$:/plugins/danielo515/encryptTiddler</li>
 
+<li>$:/plugins/tiddlywiki/github-fork-ribbon</li>
+
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
+
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/async</li>
+
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/codemirror</li>
+
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/github-fork-ribbon</li>
+
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/menubar</li>
 
 <li>$:/state/folded/$:/Manager</li>
 
@@ -177,7 +189,11 @@ Error message and password prompt
 
 <li>$:/state/importpreviewtype</li>
 
+<li>$:/state/plugin-info-1856074772-$:/plugins/tiddlywiki/github-fork-ribbon--1537306773</li>
+
 <li>$:/state/showeditpreview</li>
+
+<li>$:/state/tab--1418380610</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -194,6 +210,8 @@ Error message and password prompt
 <li>$:/status/UserName</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/tags/PageControls</li>
 
 <li>$:/theme</li>
 
@@ -227,6 +245,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20210531172101836" creator="baff5b" modified="20210531172118167" modifier="baff5b" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/github-fork-ribbon">
+<pre>no</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -10124,11 +10145,42 @@ Error message and password prompt
 <div created="20210531165915852" creator="baff5b" modified="20210531165915852" modifier="baff5b" title="$:/plugins/danielo515/encryptTiddler">
 <pre></pre>
 </div>
+<div author="Simon Whitaker" dependents="" description="GitHub-inspired corner ribbon" list="readme usage" name="GitHub Fork Ribbon" plugin-type="plugin" title="$:/plugins/tiddlywiki/github-fork-ribbon" type="application/json" version="5.1.23">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/tiddlywiki/github-fork-ribbon/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/github-fork-ribbon/readme&quot;,
+            &quot;text&quot;: &quot;This plugin provides a diagonal ribbon across the corner of the window. It resembles the design used by ~GitHub for their \&quot;Fork me on ~GitHub\&quot; ribbons.\n\nThe ribbon can be positioned over any corner, and can incorporate user defined text, colours and a link.\n\nThe CSS stylesheet is adapted from work by Simon Whitaker:\n\nhttps://github.com/simonwhitaker/github-fork-ribbon-css/\n\n[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/github-fork-ribbon]]\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/github-fork-ribbon/styles&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/github-fork-ribbon/styles&quot;,
+            &quot;tags&quot;: &quot;[[$:/tags/Stylesheet]]&quot;,
+            &quot;text&quot;: &quot;/* Left will inherit from right (so we don't need to duplicate code */\n.github-fork-ribbon {\n  /* The right and left lasses determine the side we attach our banner to */\n  position: absolute;\n\n  /* Add a bit of padding to give some substance outside the \&quot;stitching\&quot; */\n  padding: 2px 0;\n\n  /* Set the base colour */\n  background-color: #a00;\n\n  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)), to(rgba(0, 0, 0, 0.15)));\n  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));\n  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));\n  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));\n  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));\n  background-image: linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));\n  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#000000');\n\n  /* Add a drop shadow */\n  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);\n  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);\n\n  z-index: 999;\n  pointer-events: auto;\n}\n\n.github-fork-ribbon a, .github-fork-ribbon a.tc-tiddlylink,\n.github-fork-ribbon a:hover, .github-fork-ribbon a.tc-tiddlylink:hover  {\n  /* Set the font */\n  font-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, sans-serif;\n  font-size: 13px;\n  font-weight: 700;\n  color: white;\n\n  /* Set the text properties */\n  text-decoration: none;\n  text-shadow: 0 -1px rgba(0,0,0,0.5);\n  text-align: center;\n\n  /* Set the geometry. If you fiddle with these you'll also need to tweak the top and right values in #github-fork-ribbon. */\n  width: 200px;\n  line-height: 20px;\n\n  /* Set the layout properties */\n  display: inline-block;\n  padding: 2px 0;\n\n  /* Add \&quot;stitching\&quot; effect */\n  border-width: 1px 0;\n  border-style: dotted;\n  border-color: rgba(255,255,255,0.7);\n}\n\n.github-fork-ribbon-wrapper {\n  width: 150px;\n  height: 150px;\n  position: absolute;\n  overflow: hidden;\n  top: 0;\n  z-index: 999;\n  pointer-events: none;\n}\n\n.github-fork-ribbon-wrapper.fixed {\n  position: fixed;\n}\n\n.github-fork-ribbon-wrapper.left {\n  left: 0;\n}\n\n.github-fork-ribbon-wrapper.right {\n  right: 0;\n}\n\n.github-fork-ribbon-wrapper.left-bottom {\n  position: fixed;\n  top: inherit;\n  bottom: 0;\n  left: 0;\n}\n\n.github-fork-ribbon-wrapper.right-bottom {\n  position: fixed;\n  top: inherit;\n  bottom: 0;\n  right: 0;\n}\n\n.github-fork-ribbon-wrapper.right .github-fork-ribbon {\n  top: 42px;\n  right: -43px;\n\n  /* Rotate the banner 45 degrees */\n  -webkit-transform: rotate(45deg);\n  -moz-transform: rotate(45deg);\n  -o-transform: rotate(45deg);\n  transform: rotate(45deg);\n}\n\n.github-fork-ribbon-wrapper.left .github-fork-ribbon {\n  top: 42px;\n  left: -43px;\n\n  /* Rotate the banner -45 degrees */\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}\n\n\n.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {\n  top: 80px;\n  left: -43px;\n\n  /* Rotate the banner -45 degrees */\n  -webkit-transform: rotate(45deg);\n  -moz-transform: rotate(45deg);\n  -o-transform: rotate(45deg);\n  transform: rotate(45deg);\n}\n\n.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {\n  top: 80px;\n  right: -43px;\n\n  /* Rotate the banner -45 degrees */\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/github-fork-ribbon/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/github-fork-ribbon/usage&quot;,
+            &quot;text&quot;: &quot;Copy appropriate chunks on a new tiddler and tag it `$:/tags/PageControls`. Name of the new tiddler does not matter. Only the tag matters.\n\n```\n&lt;!-- TOP RIGHT RIBBON: START COPYING HERE --&gt;\n&lt;div class=\&quot;github-fork-ribbon-wrapper right\&quot;&gt;&lt;div class=\&quot;github-fork-ribbon\&quot;&gt;&lt;a href=\&quot;https://github.com/simonwhitaker/github-fork-ribbon-css\&quot;&gt;Fork me on ~GitHub&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;!-- TOP RIGHT RIBBON: END COPYING HERE --&gt;\n\n&lt;!-- TOP LEFT RIBBON: START COPYING HERE --&gt;\n&lt;div class=\&quot;github-fork-ribbon-wrapper left\&quot;&gt;&lt;div class=\&quot;github-fork-ribbon\&quot;&gt;&lt;a href=\&quot;https://github.com/simonwhitaker/github-fork-ribbon-css\&quot;&gt;Fork me on ~GitHub&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;!-- TOP LEFT RIBBON: END COPYING HERE --&gt;\n\n\n&lt;!-- BOTTOM RIGHT RIBBON: START COPYING HERE --&gt;\n&lt;div class=\&quot;github-fork-ribbon-wrapper right-bottom\&quot;&gt;&lt;div class=\&quot;github-fork-ribbon\&quot;&gt;&lt;a href=\&quot;https://github.com/simonwhitaker/github-fork-ribbon-css\&quot;&gt;Fork me on ~GitHub&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;!-- BOTTOM RIGHT RIBBON: END COPYING HERE --&gt;\n\n&lt;!-- BOTTOM LEFT RIBBON: START COPYING HERE --&gt;\n&lt;div class=\&quot;github-fork-ribbon-wrapper left-bottom\&quot;&gt;&lt;div class=\&quot;github-fork-ribbon\&quot;&gt;&lt;a href=\&quot;https://github.com/simonwhitaker/github-fork-ribbon-css\&quot;&gt;Fork me on ~GitHub&lt;/a&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;!-- BOTTOM LEFT RIBBON: END COPYING HERE --&gt;\n```\n&quot;
+        }
+    }
+}</pre>
+</div>
 <div created="20210531161534008" modified="20210531165428036" title="$:/SiteSubtitle">
 <pre>https://www.xrhodium.org | https://www.freemarket.one</pre>
 </div>
 <div created="20210531161523147" modified="20210531165406296" title="$:/SiteTitle">
 <pre>xRhodium / freeMarketOne Wiki</pre>
+</div>
+<div created="20210531171828541" creator="baff5b" modified="20210531171830751" modifier="baff5b" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/async">
+<pre>no</pre>
+</div>
+<div created="20210531171659088" creator="baff5b" modified="20210531171734596" modifier="baff5b" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/codemirror">
+<pre>no</pre>
+</div>
+<div created="20210531171939035" creator="baff5b" modified="20210531171939035" modifier="baff5b" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/github-fork-ribbon">
+<pre>yes</pre>
+</div>
+<div created="20210531171906879" creator="baff5b" modified="20210531171906879" modifier="baff5b" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/menubar">
+<pre>yes</pre>
 </div>
 <div created="20210531164804353" modified="20210531164804353" title="$:/state/folded/$:/Manager">
 <pre>show</pre>
@@ -10145,8 +10197,14 @@ Error message and password prompt
 <div created="20210531170208478" creator="baff5b" modified="20210531170212444" modifier="baff5b" title="$:/state/importpreviewtype">
 <pre>$:/core/ui/ImportPreviews/Text</pre>
 </div>
+<div created="20210531172024694" creator="baff5b" modified="20210531172024694" modifier="baff5b" title="$:/state/plugin-info-1856074772-$:/plugins/tiddlywiki/github-fork-ribbon--1537306773">
+<pre>usage</pre>
+</div>
 <div created="20210531171316631" creator="baff5b" modified="20210531171319357" modifier="baff5b" title="$:/state/showeditpreview">
 <pre>no</pre>
+</div>
+<div created="20210531171738511" creator="baff5b" modified="20210531171815249" modifier="baff5b" title="$:/state/tab--1418380610">
+<pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
 <div created="20210531163213793" modified="20210531163217035" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
@@ -10154,8 +10212,8 @@ Error message and password prompt
 <div created="20210531164923517" modified="20210531164926967" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20210531161608618" modified="20210531164921716" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210531161608618" creator="baff5b" modified="20210531171530591" modifier="baff5b" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20210531161614487" modified="20210531161637271" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10169,8 +10227,14 @@ Error message and password prompt
 <div created="20210531165433941" creator="b" modified="20210531165434953" modifier="baff5" title="$:/status/UserName">
 <pre>baff5b</pre>
 </div>
-<div created="20210531170030613" creator="baff5b" list="Welcome ElectrumRhodium" modified="20210531171023007" modifier="baff5b" title="$:/StoryList">
+<div created="20210531170030613" creator="baff5b" list="$:/tags/PageControls $:/ControlPanel $:/plugins/tiddlywiki/github-fork-ribbon Welcome ElectrumRhodium" modified="20210531172114540" modifier="baff5b" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20210531172141311" creator="baff5b" modified="20210531172221950" modifier="baff5b" tags="" title="$:/tags/PageControls">
+<pre>&lt;!-- TOP RIGHT RIBBON: START COPYING HERE --&gt;
+&lt;div class=&quot;github-fork-ribbon-wrapper right&quot;&gt;&lt;div class=&quot;github-fork-ribbon&quot;&gt;&lt;a href=&quot;https://github.com/baff5b/xrhodium-wiki&quot;&gt;Fork me on ~GitHub&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- TOP RIGHT RIBBON: END COPYING HERE --&gt;</pre>
 </div>
 <div created="20210531163202681" modified="20210531164010689" title="$:/theme">
 <pre>$:/themes/tiddlywiki/vanilla</pre>
